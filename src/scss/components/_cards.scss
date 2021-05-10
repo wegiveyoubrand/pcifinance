@@ -1,0 +1,39 @@
+.profile-card {
+  @extend %card;
+  background: rgb(12, 12, 184);
+  @extend %flex;
+  @extend %flex-column;
+  text-align: center;
+  justify-content: space-between;
+  @extend %align-center;
+  border-radius: 3vw;
+}
+
+.dashboard-card {
+  @extend %card;
+  background: rgba(255,255,255,.75);
+  box-shadow: 0 0 10px #020202;
+  border-radius: 2vw;
+
+}
+
+.profile__picture {
+  margin-top: -3.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ef56ef;
+}
+
+%card {
+  position: relative;
+  height: 48vh;
+  @extend %full-width;
+  @extend %padding-2rem;
+  cursor: pointer;
+}
+
+%padding-2rem {
+  padding: 2rem;
+}

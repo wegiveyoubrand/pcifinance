@@ -1,0 +1,27 @@
+.brand {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    height: 90%;
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  &__tagline {
+    opacity: 0.7;
+    font-weight: 500;
+    color: teal;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}

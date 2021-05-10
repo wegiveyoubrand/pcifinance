@@ -1,0 +1,45 @@
+/* ===== GLOBAL PROPERTIES ===== */
+
+%justify-center {
+  justify-content: center;
+}
+
+%justify-between {
+  justify-content: space-between;
+}
+
+%align-center {
+  align-items: center;
+}
+
+/* ===== FLEX ===== */
+
+%flex {
+  display: flex;
+}
+
+%flex-column {
+  @extend %flex;
+  flex-direction: column;
+}
+
+%flex-row {
+  @extend %flex;
+  flex-direction: row;
+}
+
+%flex-all-center {
+  @extend %flex;
+  @extend %justify-center;
+  @extend %align-center;
+}
+
+%flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* ===== GRID ===== */
+
+%grid {
+  display: grid;
+}

@@ -1,0 +1,9 @@
+%container {
+  @extend %grid;
+}
+
+.cards-container {
+  @extend %container;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}

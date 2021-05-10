@@ -1,0 +1,132 @@
+.form__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: calc(100vh - 3.145em);
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#product-page .form__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  height: calc(100vh - 6em);
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__talk {
+  background-image: url(/assets/images/home-video.jpg);
+  background-position: center;
+  background-size: cover;
+  display: none;
+
+  @media (min-width: 600px) {
+    display: grid;
+  }
+}
+
+#form-title {
+  padding-top: 1em;
+  color: #333333;
+  font-weight: lighter;
+  text-transform: uppercase;
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+form {
+  max-width: 320px;
+  width: 100%;
+  padding: 2em 1em;
+  box-shadow: 0px 5px 20px grey;
+
+  .input-group,
+  .input-wrapper {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.25em 0.75em;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid rgba(51, 51, 51, 0.301);
+    letter-spacing: 0.1em;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.25em;
+    color: #333;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+  }
+
+  .button {
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+  }
+}
+
+.form-container {
+  padding: 0 2em;
+  height: calc(100vh - 5em);
+  width: 90%;
+  margin: auto;
+
+  .account-opening-form {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(1fr);
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 680px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+      box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.301);
+
+      ::placeholder {
+        font-size: 0.5em;
+        letter-spacing: normal;
+      }
+    }
+
+    .button {
+      margin-top: .5em;
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    .form__page--2 {
+      display: grid;
+      place-items: center;
+
+    }
+
+    #form-title {
+      @media screen and (min-width: 680px) {
+        text-align: left;
+        max-width: unset;
+        font-size: 3em;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.section {
+  padding: 2rem;
+  background: transparent;
+  min-height: calc(100vh - 5rem);
+
+  &-1 {
+    @extend %flex-column;
+    @extend %justify-center;
+    gap: 2rem;
+    position: relative;
+    background: #fff;
+    
+    > div:first-child {
+      text-align: center;
+      text-transform: uppercase;
+      //   margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.aside-container {
+  position: fixed;
+  padding-top: 5rem;
+  z-index: 99;
+  height: 100%;
+  background: lighten($color: teal, $amount: .5);
+  width: 80px;
+  transition: 0.5s;
+
+  &.active {
+    width: 100%;
+  }
+}
